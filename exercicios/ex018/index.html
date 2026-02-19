@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body>h1{
+            font-size: 2.5em;
+        }
+        body>p{
+            font-size: 2em;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Betania+Patmos&display=swap');
+        @font-face {
+            font-family:'littlebird';
+            src: url(littlebird.ttf) format('truetype');
+        }
+        p#um{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        p#dois{
+            font-family: "Betania Patmos", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+        p#tres{
+            font-family: 'littlebird';
+        }
+    </style>
+</head>
+<body>
+    <h1>Fontes em CSS</h1>
+    <p id="um">Podemos configurar fontes padrão do sistema</p>
+    <p id="dois">Ou então usar uma fonte do google fonts</p>
+    <p id="tres">Ou ainda usar um arquivo local de fontes</p>
+</body>
+</html>
