@@ -60,12 +60,11 @@ section{
 #i1{
     height: 600px;
     background-image: url(pacote-d012/imagens/background001.jpg);
-    background-position: right;
+    background-position: center;
 }
 #i2{
     height: 600px;
     background-image: url(pacote-d012/imagens/background002.jpg);
-    background-position: right center;
 }
 footer{
     background-color: black;
