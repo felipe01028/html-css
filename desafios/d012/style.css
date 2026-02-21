@@ -1,43 +1,71 @@
 @charset "UTF-8";
-
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+:root{
+    --fonte1: Verdana,Geneva,Tahoma, Sans-serif;
+    --fonte2: 'passion one';
+    --fonte3: 'Chewy';
+}
 *{
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
 }
 
+body{
+    min-height: 100%vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
+}
 header{
     background-color: black;
     color: white;
     text-align: center;
-    padding-inline: 10px;
     padding: 50px;
-    font-family: "Archivo Black", sans-serif;
 }
-main{
-    padding: 5em;
-    line-height: 3em;
-    font-family: "chewy";
+header h1{
+    text-transform: small-caps;
+    font-family: var(--fonte2);
+    font-size: larger;
+    font-size: 3em;
+    line-height: 1.5em;
+}
+a{
+    color: white;
     text-decoration: none;
+    font-weight: bolder;
+}
+a:hover{
+    text-decoration: underline;
+}
+section{
+    font-family: var(--fonte3);
+    padding: 10vh;
+    line-height: 2em;
+    font-size: 30px;
+}
+.normal{
+    background-color: white;
+    color: black;
 }
 .imagem{
+    background-color: black;
+    color:white;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.imagem p{
+    background-color: hwb(0 0% 100% / 0.336);
+    display: inline-block;
+}
+#i1{
     height: 600px;
-    padding: -60px 0px;
     background-image: url(pacote-d012/imagens/background001.jpg);
-    background-size: cover;
+    background-position: right;
 }
-.imagem img{
-    background-position: center;
-}
-.img2{
+#i2{
     height: 600px;
-    padding: -60px 0px;
     background-image: url(pacote-d012/imagens/background002.jpg);
-    background-size: cover;
-}
-.img2 img{
-    background-position: center;
+    background-position: right center;
 }
 footer{
     background-color: black;
